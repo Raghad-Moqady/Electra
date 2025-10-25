@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electra⚡</title>
+    <!-- bootstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader">
+      <span class="loader_content">Electra</span>
+    </div>
+    <!-- product section loader -->
+    <div class="productLoader">
+      <span class="loader_content">Electra</span>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">Electra⚡</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./products.html">All Products</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider main container -->
+    <div class="swiper header_swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <!-- header1 -->
+          <header
+            class="header1 d-flex justify-content-center align-items-center"
+          >
+            <div class="text-white text-center">
+              <h1 class="fw-bold">Welcome to Electra⚡</h1>
+              <h2 class="mt-3">
+                A modern online store for selling electronic<br />
+                devices and smart accessories
+              </h2>
+              <a
+                href="./products.html"
+                class="btn text-white w-25 mt-3 p-2 rounded-5 main_btn "
+                >Show All Products</a
+              >
+            </div>
+          </header>
+        </div>
+        <div class="swiper-slide">
+          <!-- header2 -->
+          <header
+            class="header2 d-flex justify-content-center align-items-center"
+          >
+            <div class="text-white text-center">
+              <h1 class="fw-bold">Electra⚡– Where Technology Meets Style</h1>
+              <h2 class="mt-3">
+                Explore innovative gadgets and exclusive <br />
+                offers tailored just for you
+              </h2>
+              <a
+                href="./products.html"
+                class="btn text-white w-25 mt-3 p-2 rounded-5 main_btn"
+                >Show All Products</a
+              >
+            </div>
+          </header>
+        </div>
+        <div class="swiper-slide">
+          <!-- header3-->
+          <header
+            class="header3 d-flex justify-content-center align-items-center"
+          >
+            <div class="text-white text-center">
+              <h1 class="fw-bold">Electra⚡– Your Gateway to Smart Living</h1>
+              <h2 class="mt-3">Discover. Shop. Live smart</h2>
+              <a
+                href="./products.html"
+                class="btn text-white w-25 mt-3 p-2 rounded-5 main_btn"
+                >Show All Products</a
+              >
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+    <!-- categories slider -->
+    <div class="swiper categories_swiper container mt-5">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper categories_slides">
+        <!-- Slides -->
+      </div>
+    </div>
+
+    <!-- 10 products -->
+    <section class="container">
+      <h2 class="text-center mt-5">Our Products</h2>
+
+      <div class="px-4 mt-5">
+        <div class="row justify-content-center productCards">
+          <!-- cards from Js -->
+        </div>
+        <div class="text-center mb-5">
+          <a
+            class="btn btn-secondary  rounded-5 w-25"
+            href="./products.html"
+            >See More Products</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 text-black bg-secondary-subtle">
+        <div class="container"><p class="m-0 text-center ">Copyright &copy; Electra⚡ 2025</p>
+        <p class="m-0 text-center text-black-50 ">Eng. Raghad Moqady | Full Stack Developer</p></div>
+    </footer>
+
+    <!-- axios |loader |try and catch |sweet alert -->
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

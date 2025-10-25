@@ -1,0 +1,110 @@
+/* rgba(255, 166, 0, 0.253) */
+body{
+    background-color: whitesmoke;
+}
+.main_btn{
+    background-color:rgba(147, 142, 142, 0.582) ;
+} 
+ 
+.header1{
+ height: 60vh;
+ background-image: url("../imgs/headerBg1.jpg");
+background-size: cover;
+ background-repeat: no-repeat;
+ background-position-y: 49%;
+ background-color: rgba(0, 0, 0, 0.534);
+ background-blend-mode: overlay;
+}
+ .header2{
+ height: 60vh;
+ background-image: url("../imgs/headerBg2.jpg");
+background-size: cover;
+ background-repeat: no-repeat;
+ background-position-y: 49%;
+ background-color: rgba(0, 0, 0, 0.726);
+ background-blend-mode: overlay;
+}
+.header3{
+ height: 60vh;
+ background-image: url("../imgs/headerBg3.jpg");
+background-size: cover;
+ background-repeat: no-repeat;
+ background-position-y: 60%;
+ background-color: rgba(0, 0, 0, 0.626);
+ background-blend-mode: overlay;
+}
+nav{
+    background-color:rgba(147, 142, 142, 0.582);
+}
+.categories_swiper .card{
+    background-color:rgba(147, 142, 142, 0.582);
+    border: none;
+ }
+
+/* #00bcd4, #1e1e2f, #f5f5f5, #6f00ff */
+.loader, .productLoader{
+    background-color:whitesmoke;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    /* z-index: 2; */
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all .6s;
+    backdrop-filter: blur(7px); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.show_loader{
+    opacity: 1;
+    visibility:visible;
+    z-index: 2;
+ }
+
+ /* from loader كود جاهز  */
+ .loader_content {
+  font-size: 48px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #263238;
+  box-sizing: border-box;
+  text-shadow: 0 0 2px #FFF, 0 0 1px #FFF, 0 0 1px #FFF;
+  letter-spacing: 2px;
+  position: relative;
+}
+.loader_content::after {
+  content: 'Electra';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(255, 166, 0);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: animloader 6s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.category_btn{
+    border: none !important;   
+    outline: none;          
+    box-shadow: none;          
+}
+.swiper-slide{
+      background-color:white; 
+}

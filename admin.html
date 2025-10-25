@@ -1,0 +1,118 @@
+<!-- Admin page = show all products for admin -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electra⚡</title>
+    <!-- bootstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader">
+      <span class="loader_content">Electra</span>
+    </div>
+    <div class="row g-0">
+      <div class="col-md-2 sidbar">
+        <div class="dash_title">
+          <h2 class="text-center pt-2">Admin</h2>
+        </div>
+        <div
+          class="dash_links text-center mt-5"
+        >
+          <div>
+            <a class="nav-link mb-4" href="./admin.html">Show all products</a>
+            <a class="nav-link" href="./createProduct.html"
+              >Create New Product +</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">Electra⚡</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <header
+          class="admin_header d-flex justify-content-center align-items-center"
+        >
+          <div class="text-white text-center">
+            <h1 class="fw-bold">Welcome to Electra⚡Dashboard</h1>
+          </div>
+        </header>
+
+        <!-- content -->
+        <div class="card m-3 p-4">
+          <h2 class="text-center p-3">All Products</h2>
+          <hr />
+            <!-- pagination -->
+          <nav aria-label="Page navigation example" class="m-auto z-0">
+            <ul class="pagination">
+              <!-- from js -->
+            </ul>
+          </nav>
+          <table class="table text-center table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Image</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="products_rows">
+              <!-- from js -->
+            </tbody>
+          </table>
+        </div>
+          <footer class="py-5 text-black bg-secondary-subtle">
+        <div class="container"><p class="m-0 text-center ">Copyright &copy; Electra⚡ 2025</p>
+        <p class="m-0 text-center text-black-50 ">Eng.Raghad Moqady</p></div>
+    </footer>
+      </div>
+    </div>
+  
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- custom js file -->
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>
