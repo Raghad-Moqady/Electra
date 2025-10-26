@@ -10,11 +10,13 @@ document.querySelector(".productName").textContent=productInfo.title;
 // show reviews
 const htmlResult= productInfo.reviews.map((review)=>{
     return`
+    <div >
        <p class="m-0">${review.rating} ⭐ <strong>${review.comment}</strong></p>
           <p class="m-0 text-black-50">${review.date}</p>
           <strong class="m-0">${review.reviewerName}</strong>
           <p class="m-0 text-black-50">${review.reviewerEmail}</p>
           <hr />
+    </div>
     `
 }).join(' ');
 document.querySelector(".reviews_info").innerHTML=htmlResult;

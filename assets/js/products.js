@@ -62,7 +62,7 @@ const showProducts = async (page=1, search_word='',sortBy='',order='') => {
       .map((product) => {
         return `
              <div class="col-md-3 mb-5 text-center">
-              <div class="card h-100">
+              <div class="card h-100" data-aos="zoom-in" data-aos-duration="1300">
                 <!-- Product image-->
                 <div style="width: 100%; height: 200px; overflow: hidden">
                   <img

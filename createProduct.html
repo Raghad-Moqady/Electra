@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+      <!-- animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- custom css file -->
     <link rel="stylesheet" href="./assets/css/createProduct.css" />
@@ -73,7 +75,7 @@
         <!-- stop hear -->
           <div class="w-50 m-auto">
     
-         <form name="createProductForm" >
+         <form name="createProductForm"  data-aos="zoom-in" data-aos-duration="1000" >
           <div class="mb-3">
              <input type="text" class="form-control target_input" name="title" placeholder="Name" />
           <span class="nameErrorMsg text-danger"></span>
@@ -115,6 +117,12 @@
     ></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <!-- animation  -->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <!-- custom js file -->
     <script src="./assets/js/createProduct.js"></script>
   </body>
